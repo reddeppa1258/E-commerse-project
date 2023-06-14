@@ -41,7 +41,12 @@ function clip(){
 // Sending The Data To Storage
 function send(){
     var ddd = document.getElementById("user").value;
-    namevalidation = /^[a-z]{8}$/
+    namevalidation = /^[a-zA-Z0-9_ ]{8}$/
+
+
+
+
+
     var ccc = document.getElementById("email").value;
     emailvalidation = /^[6-9][0-9]{9}$/
 
@@ -50,4 +55,4 @@ function send(){
    }
 }
 
-let a = new Promise()
+
