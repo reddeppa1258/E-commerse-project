@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/slider/logo.png" alt="Logo"/></a>
+        </div>
+
+        <div class="navi">
+            <nav>
+                <ul>
+                    <li>
+                        <a  href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="service.html">Service</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="icons">
+            <i id="src-icon" class="fa-solid fa-magnifying-glass"></i>
+            <i id="stg-icon" class="fa-solid fa-gear"></i>    
+            <i id="prh-icon" class="fa-solid fa-cart-plus"></i>
+        </div>
+    </header>
+
+
+    <!-- BACKGROUND IMAGE  -->
+
+    <section>
+        <div class="content">
+        <p> Great Desing Collection</p>
+        <h1>Valvet Accent Arm Chair</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia possimus placeat impedit? Iure temporibus, harum, maiores corporis atque inventore, architecto iusto ab ipsam odit et natus minima! Non, consequatur ut!
+            <br>
+         ___$399.00  <del>$499.00</del>
+        </p>
+        <button>Add to Card</button>
+        <button id="btn2">More info</button>
+    </div>
+
+    <div class="image">
+        <img src="images/slider/slider3.png" alt="BACKGROUND IMAGE"/>
+    </div>
+    </section>
+
+<!-- POP-UP FORM -->
+
+    <button id="open-form-btn" onclick="contactMe()">Contact Me</button>
+
+    <section id="pop-up" class="pop">
+        <form class="pop-form" action="#">
+            <h2 class="frm-h2">Contact Me</h2>
+            <label>Name:</label>
+            <input type="text" id="user" onkeyup="userValidation()" >
+            <label class="user-eoror" id="user-eoror" >User Name Must Contains 8 Digits</label>
+            <label class="user-valid" id="user-valid" >valid User Details</label>
+            <label class="user-emty" id="user-empty" >You Cant Leave This Emty</label>
+
+
+            <label>Email:</label>
+            <input type="email" id="email" onkeyup="emailValidation()">
+            <label class="email-eoror" id="email-eoror" >Invalid User Details</label>
+            <label class="email-valid" id="email-valid" >valid User Details</label>
+            <label class="email-emty" id="email-empty" >You Cant Leave This Emty</label>
+
+            <label>Message:</label>
+            <textarea></textarea>
+        </form>
+        
+
+
+         <button class="send" id="sent" onclick="send()">Send</button>
+         <button onclick="clip()" class="cancel" id="close">Close</button>
+    </section>
+
+
+   
+
+    <!-- cards section  -->
+
+      <div class="main">
+         <div class="card-1">
+            <div class="ima-1">
+                <img src="images/populer-products/p1.png" alt="image"/>
+            </div>
+            <div class="pharagha-1">
+                <h3>Arm Chair</h3>
+                <p>atque inventore, architecto iusto ab ipsam odit et natus minima! Non, consequatur ut!</p>
+            </div>
+        </div> 
+
+        <div class="card-2">
+            <div class="ima-2">
+                <img src="images/populer-products/p2.png" alt="image"/>
+            </div>
+            <div class="pharagha-2">
+                <h3>Latest Desing Stool And Chair</h3>
+                <p>atque inventore, architecto iusto ab ipsam odit<br>
+                     et natus minima! Non, consequatur ut!</p>
+                     <h4>Sales Strat From <>$99.00</></h4>
+                     <button>Discover More</button>
+            </div>
+        </div>
+
+        <div class="card-3">
+            <div class="ima-3">
+                <img src="images/populer-products/p3.png" alt="image"/>
+            </div>
+            <div class="pharagha-3">
+                <h3>Arm Chair</h3>
+                <p>atque inventore, architecto iusto ab ipsam odit et natus minima! Non, consequatur ut!</p>
+            </div>
+        </div>
+    </div> 
+
+    <h2>New Arrivals</h2> 
+
+     <!-- NEW ARRIVALS  -->
+     <div class="newarrivals">
+        <div class="one">
+            <img src="images/collection/arrivals1.png " alt="1"/>
+            <p>Wooden Chair <br> $65.00</p>
+        </div>
+        <div class="one">
+            <img src=" images/collection/arrivals2.png" alt="1"/>
+            <p>Singel Arm Chair <br> $80.00</p>
+        </div> 
+        <div class="one">
+            <img src="images/collection/arrivals3.png " alt="1"/>
+            <p>Wooden Arm Chair <br> $40.00</p>
+        </div>
+        <div class="one">
+            <img src=" images/collection/arrivals4.png" alt="1"/>
+            <p>Stylish Chair <br> $100.00</p>
+        </div>
+        <div class="one">
+            <img src="images/collection/arrivals5.png" alt="1"/>
+            <p>Morden Chair <br> $120.00</p>
+        </div>
+        <div class="six">
+            <img src="images/collection/arrivals6.png" alt="1"/>
+            <p>Arm Chair <br> $90.00</p>
+        </div>
+        <div class="seven">
+            <img src="images/collection/arrivals7.png" alt="1"/>
+            <p>Arm Chair <br> $90.00</p>
+        </div>
+        <div class="eight">
+            <img src="images/collection/arrivals8.png" alt="1"/>
+            <p>Wooden bed <br> $140.00</p>
+        </div>
+    </div> 
+
+    <!-- BACKGROUND IMAGE -->
+     <div class="back-ground-img">
+        <img src="images/collection/sofa-collection-banner.jpg" alt="BACK GROUND IMAGE " />
+        <div class="con">
+            <h6>Unlimited Sofa Collection</h6>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet deleniti odio <br>explicabo asperiores quod alias atque, eius facilis quae saepe. Deleniti animi <br>nostrum possimus totam quas! Vitae distinctio ipsa tenetur?
+            <br> Strats from <>$199.00</> </p>
+            <button>View More</button>
+        </div>
+    </div>
+
+    <!-- FEATUERD PRODUCTS -->
+
+     <h2 class="ff">FEATUERD PRODUCTS</h2>
+
+    <div class="featured">
+        <div class="fb-1">
+            <img src="images/features/f1.jpg" alt="hh"/>
+         <p>Desinged Sofa <br> $ 160.00</p>
+        </div>
+        <div class="fb-1">
+            <img src="images/features/f2.jpg" alt="hh"/>
+            <p>Dining Tabel<br> $ 200.00</p>
+        </div>
+        <div class="fb-1">
+            <img src="images/features/f3.jpg" alt="hh"/>
+            <p>Chair and tabel <br> $ 100.00</p>
+        </div>
+        <div class="fb-1">
+            <img src="images/features/f4.jpg" alt="hh"/>
+            <p>Modern Arm Chair <br> $ 299.00</p>
+        </div>
+    </div> 
+
+    <!-- Latest Blog -->
+
+     <h3 class="lb">Latest Blog</h3>
+
+    <div class="lbb">
+        <div class="ibm">
+            <img src="images/blog/b1.jpg " alt="ff"/>
+            <h5>Why Brands Are looking at Local Languages</h5>
+            <p>By Robert Nearby/18th Marth 2018 <br><br><br> 
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum nobis enim esse earum a dolores sapiente recusandae officia placeat  cupiditate tenetur.</p>
+        </div>
+
+    <div class="ibm">
+            <img src="images/blog/b2.jpg " alt="ff"/>
+            <h5>Why Brands Are looking at Local Languages</h5>
+            <p>By Robert Nearby/18th Marth 2018 <br><br><br> 
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum nobis enim esse earum a dolores sapiente recusandae officia placeat  cupiditate tenetur.</p> 
+          </div>
+
+    <div class="ibm">
+            <img src=" images/blog/b3.jpg" alt="ff"/>
+            <h5>Why Brands Are looking at Local Languages</h5>
+            <p>By Robert Nearby/18th Marth 2018 <br><br><br> 
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum nobis enim esse earum a dolores sapiente recusandae officia placeat  cupiditate tenetur.</p>
+             </div>
+    </div> 
+
+         <!-- clinets -->
+
+         <div class="clinets">
+            <img src="images/clients/c1.png" alt="jj"/>
+            <img src="images/clients/c2.png" alt="jj"/>
+            <img src="images/clients/c3.png" alt="jj"/>
+            <img src="images/clients/c4.png" alt="jj"/>
+            <img src="images/clients/c5.png" alt="jj"/>
+         </div>  
+
+         <!-- footer -->
+           <footer>
+            <div class="Information">
+               <h4>Information</h4>
+                <ul id="ul">
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#">Store</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="Collections">
+                <h4>Collections</h4>
+                <ul id="ul">
+                    <li>
+                        <a href="#">Wooden Chair</a>
+                    </li>
+                    <li>
+                        <a href="#">Royal cloth chair</a>
+                    </li>
+                    <li>
+                        <a href="#">Accent Chair</a>
+                    </li>
+                    <li>
+                        <a href="#">Bed</a>
+                    </li>
+                    <li>
+                        <a href="#">Hanging Lamp</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="Myaccounts">
+                <h4>My Accounts</h4>
+                <ul id="ul">
+                    <li>
+                        <a href="#">My Accounts</a>
+                    </li>
+                    <li>
+                        <a href="#">Wishlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Community</a>
+                    </li>
+                    <li>
+                        <a href="#">Order History</a>
+                    </li>
+                    <li>
+                        <a href="#">My Card</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="newslatter">
+                <h4>Newslatter</h4>
+                <p>Subscribe to get latest news,update and,<br>
+                information.</p>
+                <button>Subscribe...</button>
+            </div>
+                
+         </footer>
+         <!-- sub-footer -->
+
+         <div class="sub-footer">
+         <div class="sub-icons">
+            <i id="fb-icon" class="fa-brands fa-facebook"></i>
+            <i id="int-icon" class="fa-brands fa-instagram"></i>
+            <i id="ld-icon" class="fa-brands fa-linkedin-in"></i>
+            <i id="twi-icon" class="fa-brands fa-twitter"></i>
+            <i id="youtube-icon" class="fa-brands fa-youtube"></i>
+         </div>
+         <div class="copyright">
+            <p>@Copyright Desing And Developed By Arun Kumar.S</p>
+         </div>
+         <div class="sub-number">
+            <i id="sub-icon" class="fa-solid fa-phone-volume"></i>
+            <p>+91 9686706033 / 9972646781</p>
+         </div>
+        </div>
+
+<script src="./app.js"> 
+
+      
+        
+</script>
+
+</body>
+</html>
