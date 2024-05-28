@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>home-page</title>
+    <style>
+        header{
+    display:flex;
+   
+}
+header section{
+    flex:1;
+}
+header nav{
+    flex:10;
+    font-size: 25px;
+
+}
+header ul{
+    display:flex;
+}
+header ul li{
+    flex:1;
+}
+ ul li{ 
+   list-style:none;
+   padding-top:5px;
+}
+ul li a{
+    text-decoration: none;
+}
+header div{
+    display:flex;
+    flex:1;
+    font-size: 25px;
+    
+}
+#gear{
+   position:absolute;
+   top:40px;
+   left:1270px;
+}
+#twit{
+   position:absolute;
+   top:10px;
+   left:1310px;
+}
+#insta{
+   position:absolute;
+   top:10px;
+   left:1370px;
+}
+
+.im{
+    padding-top:150px;
+    padding-right:180px;
+    float:right;
+}
+.pe{
+    padding-top:150px;
+   padding-left:200px;
+   font-size:20px;
+   color:gray;
+}
+.pe1{
+    font-size:50px;
+    padding-left:200px;
+}
+.pe2{
+    
+    padding-left:200px;
+}
+.btn1{
+position:absolute;
+top:600px;
+left:220px;
+width:140px;
+height:40px;
+border-radius: 10px;
+background-color:orange;
+border:none;
+color:white;
+}
+.btn1:hover{
+    transform: scale(1.2);
+    transition-duration: 2secs;
+    transition-timing-function: ease-in;
+    background-color: ghostwhite;
+    color:black;
+}
+.but{
+    position:fixed;
+    top:300px;
+    left:1410px;
+    background-color:orange;
+    width:80px;
+    height:40px;
+    border-radius:10px;
+    transform:rotate(270deg);
+}
+
+.pe3{
+    position:absolute;
+    top:593px;
+    left:380px;
+}
+.card{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    
+   padding-top:300px;
+   padding-left: 150px;
+   padding-right: 200px;
+   
+    
+}
+.card1{
+    background-color: aqua;
+    width:350px;
+    height:450px;
+    margin:40px;
+    
+}
+.card2{
+   
+  background-color: aqua;
+  width:400px;
+  height:450px;
+  margin-top: 40px;
+  align-items: center;
+}
+
+
+
+.card3{
+    padding-left:100px;
+    height:450px;
+    width:300px;
+    background-color:aqua;
+    margin:40px;
+    
+   
+}
+.new{
+    text-align: center;
+    padding-top: 90px;
+    font-size: 60px;
+}
+
+.frame{
+    display:grid;
+    grid-template-columns: repeat(4,2fr);
+    padding-left: 140px;
+    padding-right: 140px;
+}
+figure{
+    padding-top: 100px;
+    padding-left:30px;
+    padding-right: 30px;
+}
+figure:hover{
+    transform:scale(1.5);
+    transition-duration: 5secs;
+    transition-delay:3secs;
+    transition-timing-function: linear;
+}
+#image1 {
+    background-image: url(http://127.0.0.1:5502/images/collection/sofa-collection-banner.jpg);
+    width:1460px;
+    height:500px;
+} 
+.he{
+    padding-left: 200px;
+    padding-top: 170px;
+    color:white;
+    font-size: 50px;
+}
+.he1{
+    padding-left:200px;
+    color:white;
+    font-size: 20px;
+    line-height: 25px;
+}
+.on{
+    position:absolute;
+    top:2650px;
+    left:200px;
+    width:120px;
+    height:40px;
+    border-radius: 10px;
+    background-color: orange;
+    border:none;
+}
+.featured{
+    text-align:center;
+    padding-top:120px;
+    font-size:50px;
+}
+.sofa{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    box-sizing: border-box;
+}
+.heading{
+    text-align:center;
+    padding-top: 100px;
+}
+.robert{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top:50px;
+    padding-left: 50px;
+}
+.h1{
+    font-size: 20px;
+}
+.p{
+    font-size: 15px;
+}
+.ig:hover{
+    opacity:calc(0.8);
+}
+.sore{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-bottom: 80px;
+    background-color:grey;
+
+}
+
+.main{
+    display:flex;
+    padding-left:100px;
+    padding-top: 100px;
+
+}
+.infor{
+    margin:10px;
+    padding-left:15px;
+}
+.coll{
+    margin:10px;
+    padding-left: 15px;;
+}
+.myacc{
+    margin:10px;
+    padding-left: 15px;;
+}
+.news{
+    margin:10px;
+    padding-left: 15px;;
+}
+
+footer ul li a{
+    text-decoration: none;
+    padding-bottom:10px;
+}
+   
+
+
+
+.icon{
+    position:relative;
+    background-color: silver;
+    padding-left:550px;
+  
+}
+.font-icons{
+    padding:0px;
+    margin:0px;
+}
+.copy{
+    padding-top: 0px;
+    margin:0px;
+}
+.fa-brands{
+    padding:30px;
+}
+.fa-solid{
+    position:absolute;
+    left:530px;
+    top:100px;
+}
+footer{
+    padding:15px;
+    line-height: 35px;
+}
+
+  </style>
+</head>
+<body>
+    <header>
+        <section>
+            <a href="">
+            <img src="https://www.achieversit.com/assets/images/logo-white.png" alt="" />
+            </a>
+        </section>
+
+        
+            <nav>
+                <ul>
+                    <li>
+                        <a href="home1.html"> Home</a>
+                    </li>
+                    <li>
+                        <a href="about1.html">About</a>
+                        
+                    </li>
+                    <li>
+                        <a href="service1.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog1.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact1.html">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="img">
+               <a href=" "><i id="gear" class="fa-solid fa-gear"></i></a>
+                <a href=""><i id="twit" class="fa-brands fa-twitter"></i></a>
+                <a href=""><i  id= "insta" class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </header>
+                    
+    <div>
+        <img  class="im" src="http://127.0.0.1:5502/images/slider/slider3.png" alt="" width="350px" , height="350px"/>
+        <p class="pe">Great Desing Collection</p>
+        <h1 class="pe1">Valvet Accent Arm Chair</h1> 
+        <p class="pe2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Officia possimus placeat impedit? Iure<br> temporibus, harum, maiores corporis atque inventore, architecto iusto<br> ab ipsam odit et natus minima! Non, consequatur ut!
+            ___$399.00 $499.00</p>
+            <button class="btn1" input="text" type="button">Add to card</button>
+            <p class="pe3">more info</p>
+            <button  class="but" input="text" type="button">contact me</button>
+    </div>
+    <div class=" card">
+        <div class="card1">
+            <figure>
+                <img src="http://127.0.0.1:5502/images/populer-products/p1.png" alt="" width="150px";height="200px"/>
+                <figcaption>
+                    <h1>Arm Chair</h1>
+                    <p>atque inventore, architecto iusto ab ipsam odit et natus minima! Non, consequatur ut!</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="card2">
+            <div class="cd">
+                <figure>
+                    <img src="http://127.0.0.1:5502/images/populer-products/p2.png" alt="" width="100px";height="150px"/>
+                    <figcaption>
+                        <h1>Latest Desing Stool And Chair</h1>
+                        <p>atque inventore, architecto iusto ab ipsam odit et natus minima! Non, consequatur ut!</p>
+                    </figcaption>
+                </figure>
+             
+               
+            <button  class="btn2" input="text" type="button">Discover me</button>
+        
+        </div>
+        </div>
+        <div class="card3">
+            <figure>
+                <img src="http://127.0.0.1:5502/images/populer-products/p3.png" alt="" width="150px";height="200px"/>
+                <figcaption>
+                    <h1> Arm Chair</h1>
+                    <p>atque inventore, architecto iusto ab ipsam odit et natus minima! Non, consequatur ut!</p>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+ <div>
+    <div>
+        <h1 class="new">New Arrivals</h1>
+    </div>
+    <div class="frame">
+        <figure>
+            <img src="http://127.0.0.1:5502/images/collection/arrivals1.png" alt="" width="150px",height="150px";/>
+            <figcaption>Wooden Chair
+                $65.00</figcaption>
+        </figure>
+        <figure>
+            <img src="http://127.0.0.1:5502/images/collection/arrivals2.png" alt="" width="150px",height="150px"/>
+            <figcaption>Singel Arm Chair
+                $80.00</figcaption>
+        </figure>
+        <figure>
+            <img src="http://127.0.0.1:5502/images/collection/arrivals3.png" alt="" width="150px",height="150px"/>
+            <figcaption> Wooden Arm Chair
+                $40.00</figcaption>
+        </figure>
+        <figure>
+            <img src="http://127.0.0.1:5502/images/collection/arrivals4.png" alt="" width="150px",height="150px"/>
+            <figcaption>Stylish Chair
+                $100.00</figcaption>
+        </figure>
+        <figure>
+            <img src="http://127.0.0.1:5502/images/collection/arrivals5.png" alt="" width="100px",height="150px"/>
+            <figcaption>Morden Chair
+                $120.00</figcaption>
+        </figure>
+        <figure>
+            <img src="http://127.0.0.1:5502/images/collection/arrivals6.png" alt="" width="200px",height="250px"/>
+            <figcaption>Arm Chair
+                $90.00</figcaption>
+        </figure>
+        <figure>
+            <img src="http://127.0.0.1:5502/images/collection/arrivals7.png" alt="" width="150px",height="150px"/>
+            <figcaption>Arm Chair
+                $90.00</figcaption>
+        </figure>
+        <figure>
+            <img src="http://127.0.0.1:5502/images/collection/arrivals8.png" alt="" width="200px",height="250px"/>
+            <figcaption>Wooden bed
+                $140.00
+                
+                </figcaption>
+        </figure>
+    </div>
+ </div>
+ <div id="image1">
+    <h1 class="he">Unlimited Sofa Collection</h1>
+    <p class="he1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet deleniti odio<br>
+        explicabo asperiores quod alias atque, eius facilis quae saepe. Deleniti animi<br>
+        nostrum possimus totam quas! Vitae distinctio ipsa tenetur?<br>
+        Strats from <>$199.00</p>
+        <button class="on" input="text" type="button">View More</button>
+ </div>
+ <div>
+    <div>
+        <h1 class="featured">FEATURED PRODUCTS</h1>
+    </div>
+    <div class="sofa">
+        <figure>
+            <img src="http://127.0.0.1:5502/images/features/f1.jpg" alt="" width="150px",height="150px"/>
+            <figcaption>Desinged Sofa
+                $ 160.00</figcaption>
+        </figure>
+        <figure>
+            <img src="http://127.0.0.1:5502/images/features/f2.jpg" alt="", width="150px",height="150px"/>
+            <figcaption>Dining Tabel
+                $ 200.00</figcaption>
+        </figure>
+        <figure>
+            <img src="http://127.0.0.1:5502/images/features/f3.jpg" alt="" ,  width="150px",height="150px"/>
+            <figcaption>Chair and tabel
+                $ 100.00</figcaption>
+        </figure>
+        <figure>
+            <img src="http://127.0.0.1:5502/images/features/f4.jpg" alt="", width="150px",height="150px"/>
+            <figcaption>Modern Arm Chair
+                $ 299.00</figcaption>
+        </figure>
+    </div>
+ </div>
+ <div>
+    <h1 class="heading">LATEST BLOG</h1>
+    <div class="robert">
+        <div >
+            <img  class="ig" src="http://127.0.0.1:5502/images/blog/b1.jpg" alt=""/>
+            <h1 class="h1">Why Brands Are looking at Local Languages</h1>
+            <p class="p">By Robert Nearby/18th Marth 2018</p>
+            <p class="p">Lorem ipsum dolor sit amet consectetur, <br>adipisicing elit. Cum nobis enim esse<br> earum a dolores sapiente recusandae<br> officia placeat cupiditate tenetur.</p>
+        </div>
+        <div>
+            <img  class="ig"src="http://127.0.0.1:5502/images/blog/b2.jpg" alt=""/>
+            <h1 class="h1">Why Brands Are looking at Local Languages</h1>
+            <p class="p">By Robert Nearby/18th Marth 2018</p>
+            <p class="p">Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. Cum nobis enim esse<br> earum a dolores sapiente recusandae <br>officia placeat cupiditate tenetur.</p>
+        </div>
+        <div>
+            <img class="ig" src="http://127.0.0.1:5502/images/blog/b3.jpg" alt=""/>
+            <h1 class="h1">Why Brands Are looking at Local Languages</h1>
+            <p class="p">By Robert Nearby/18th Marth 2018</p>
+            <p class="p">Lorem ipsum dolor sit amet consectetur, <br>adipisicing elit. Cum nobis enim esse <br>earum a dolores sapiente recusandae <br>officia placeat cupiditate tenetur.</p>
+        </div>
+    </div>
+ </div>
+  <div class="sore">
+    <img src="http://127.0.0.1:5502/images/clients/c1.png" alt=""  width="100px",height="200px",/>
+    <img src="http://127.0.0.1:5502/images/clients/c2.png" alt="" width="100px",height="200px",/>
+    <img src="http://127.0.0.1:5502/images/clients/c3.png" alt="" width="100px",height="200px",/>
+    <img src="http://127.0.0.1:5502/images/clients/c4.png" alt="" width="100px",height="200px",/>
+    <img src="http://127.0.0.1:5502/images/clients/c5.png" alt="" width="100px",height="200px",/>
+
+  </div>
+   <!-------footer- starts--here-->
+   <footer >
+    <div class="main">
+        <div class="infor">
+            <h1>INFORMATION</h1>
+           <ul class="ab">
+            <li>
+                <a href="">About us</a>
+            </li>
+            <li>
+                <a href="">COntact us</a>
+            </li>
+            <li>
+                <a href="">News</a>
+            </li>
+            <li>
+                <a href="">Store</a>
+            </li>
+           
+           </ul>
+        </div>
+        <div class="coll">
+            <h1>Collections</h1>
+            <ul class="ab">
+             <li>
+                 <a href="">Wooden chair</a>
+             </li>
+             <li>
+                 <a href="">Royal cloth chair</a>
+             </li>
+             <li>
+                 <a href="">Accent chair</a>
+             </li>
+             <li>
+                 <a href="">Bed</a>
+             </li>
+             <li>
+                <a href="">Hanging lamp</a>
+            </li>
+            
+            </ul>
+        </div>
+        <div class="myacc">
+            <h1>MYACCOUNTS</h1>
+            <ul class="ab">
+             <li>
+                 <a href="">My Accounts</a>
+             </li>
+             <li>
+                 <a href="">Wishlist</a>
+             </li>
+             <li>
+                 <a href="">Community </a>
+             </li>
+             <li>
+                 <a href="">Order History</a>
+             </li>
+             <li>
+                <a href="">My Card</a>
+            </li>
+            
+            </ul>
+        </div>
+        <div class="news">
+            <h1>NEWS LETTER</h1>
+            <ul class="ab">
+             <li>
+                 <a href="">Subscribe to get latest news,update and,
+                    information</a>
+             </li>
+             <li>
+                 <a href="">
+                     <button input="text" type="button"> subscribe</button>
+                    </a>
+             </li>
+             <li>
+                 <a href=""></a>
+             </li>
+             <li>
+                 <a href=""></a>
+             </li>
+            
+            </ul>
+        </div>
+    </div>
+    <!---sub--footer-->
+
+        <div class="icon">
+            <div class="font-icons" >
+            
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="copy"> 
+                <p>@copyright Designed and Developed by Reddy-king</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>+919959559088,+916301990787</p>
+            </div>
+        </div>
+       
+       
+
+    
+   </footer>
+
+</body>
+</html>

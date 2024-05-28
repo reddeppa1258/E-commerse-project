@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    
+    <style>
+ header{
+    display:flex;
+   
+}
+header section{
+    flex:1;
+}
+header nav{
+    flex:10;
+    font-size: 25px;
+
+}
+header ul{
+    display:flex;
+}
+header ul li{
+    flex:1;
+}
+ ul li{ 
+   list-style:none;
+   padding-top:5px;
+}
+ul li a{
+    text-decoration: none;
+}
+header div{
+    display:flex;
+    flex:1;
+    font-size: 25px;
+    
+}
+#gear{
+   position:absolute;
+   top:40px;
+   left:1270px;
+}
+#twit{
+   position:absolute;
+   top:10px;
+   left:1310px;
+}
+#insta{
+   position:absolute;
+   top:10px;
+   left:1370px;
+}
+
+#bimage{
+    background-image: url(https://hipbrands.in/wp-content/uploads/2021/04/furniture-ecommerce-website-in-india.jpg);
+    width:100%;
+    height:500px;
+    justify-content: center;
+    text-align: center;
+    padding-top:180px;
+}
+.h1{
+    font-size: 60px;
+    color:darkblue;
+}
+.image{
+    float:right;
+    width:500px;
+    height:600px;
+    padding-right:50px;
+    padding-top:70px;
+}
+.hc{
+    padding-top:90px;
+    padding-left:70px;
+    line-height:30px;
+}
+.hc1{
+    padding-top:30px;
+    padding-left:70px;
+    line-height:80px;
+    font-size: 40px ;
+    font-family:'roboto', sans-serif;
+    font-style: italic;
+}   
+.hc2{
+    padding-top:40px;
+    padding-left:70px;
+    line-height:30p
+} 
+.btn{
+position:absolute;
+top:1100px;
+margin-left: 850px;
+background-color: green;
+font-size:50px;
+border:0px;
+border-radius:20px;
+
+}
+.product{
+    display:flex;
+    flex-direction: row;
+    font-size:20px;
+    font-family:bold;
+    padding-top: 140px;
+    color:black;
+    margin-left:180px;
+    gap:250px;
+}
+.p{
+    color:orange;
+
+}
+.chair{
+    display:flex;
+    flex-direction: row;
+    width:250px;
+    height:300px;
+    padding-top:200px;
+    gap:200px;
+    margin-left:280px;
+}
+.chair1:hover{
+    transform:scale(1.5);
+    transition-property: inherit;
+    transition-delay: 0secs;
+    transition-duration: 5secs;
+    transition-timing-function: linear;
+}
+.chair2:hover{
+    transform:scale(1.5);
+    transition-property: inherit;
+    transition-delay: 0secs;
+    transition-duration: 5secs;
+    transition-timing-function: linear;
+}
+.rd1{
+    position:absolute;
+    top:2030px;
+    margin-left: 350px;
+    background-color:silver;
+    font-size:20px;
+}
+.rd1:hover{
+    transform:scale(1.5);
+    transition-property: inherit;
+    transition-delay: 0secs;
+    transition-duration: 5secs;
+    transition-timing-function: linear;
+
+}
+.rd2{
+    position:absolute;
+    top:2030px;
+    margin-left: 930px;
+    background-color:silver;
+    font-size:20px;
+}
+.rd2:hover{
+    transform:scale(1.5);
+    transition-property: inherit;
+    transition-delay: 0secs;
+    transition-duration: 5secs;
+    transition-timing-function: linear;
+
+}
+.invention{
+    background-image: url(images/i-cons/about-img.png);
+    width:98%;
+    height:500px;
+    
+}
+.our{
+    padding-top:180px;
+ 
+    font-size:25px;
+    padding-left: 310px;
+
+}
+.in{
+    
+    
+    font-size:35px;
+    padding-left: 310px;
+}
+.bttn1{
+    position:absolute;
+    top:2500px;
+    left:1100px;
+    color:black;
+    background: white;
+    font-size: 30px;
+    border-radius: 20px;
+    
+}
+
+.bttn2{
+    position:absolute;
+    top:2500px;
+    left:1300px;
+    color:black;
+    background: orange;
+    font-size: 30px;
+    border-radius: 20px;
+    
+}
+.bttn1:hover{
+ background-color: orange;
+}
+.team{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 20px;
+    
+}
+.te{
+    padding-top: 150px;
+    text-align:center ;
+
+}
+.com{
+    text-align:center ;
+
+}
+.ban{
+    display:grid;
+    grid-template-columns: repeat(5,2fr);
+    padding-left: 50px;
+}
+.ban img{
+    width:150px;
+    height:150px;
+    margin:20px;
+}
+ .main{
+    display:flex;
+    padding-left:100px;
+    padding-top: 100px;
+
+}
+.infor{
+    margin:10px;
+    padding:10px;
+    box-sizing: border-box;
+    
+}
+footer ul li a{
+    text-decoration: none;
+    padding-bottom:20px;
+}
+.coll{
+    margin:20px;
+    width:100%;
+    padding:10px;
+    box-sizing: border-box;
+    
+}
+.myacc{
+    margin:10px;
+    padding:10px;
+    box-sizing: border-box;
+    
+}
+.news{
+    margin:10px;
+    padding:10px;
+    box-sizing: border-box;
+    
+} 
+
+
+.icon{
+    position:relative;
+    background-color: silver;
+    padding-left:550px;
+  
+}
+.font-icons{
+    padding:0px;
+    margin:0px;
+}
+.copy{
+    padding-top: 0px;
+    margin:0px;
+}
+.fa-brands{
+    padding:30px;
+}
+.fa-solid{
+    position:absolute;
+    left:530px;
+    top:100px;
+}
+footer{
+    padding:20px;
+    line-height: 35px;
+}
+</style>
+</head>
+<body>
+
+     <header>
+        <section>
+            <a href="">
+            <img src="https://www.achieversit.com/assets/images/logo-white.png" alt=""/>
+            </a>
+        </section>
+
+        
+            <nav>
+                <ul>
+                    <li>
+                        <a href="home1.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about1.html">About</a>
+                        
+                    </li>
+                    <li>
+                        <a href="service1.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="blog1.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact1.html">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="img">
+               <a href=" "><i id="gear" class="fa-solid fa-gear"></i></a>
+                <a href=""><i id="img2" class="fa-brands fa-twitter"></i></a>
+                <a href=""><i  id= "img3" class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </header>
+
+                     <!-----bannerr --starts-->
+    <div id="bimage" >
+        <h1 class="h1">About Us</h1>
+        <p>Home page---- About</p>
+    </div>
+
+    <div class="para">
+       <img  class="image" src="https://c0.wallpaperflare.com/preview/502/555/805/animal-chicken-farmer-girl.jpg" alt="">
+        <h1 class="hc">OUR INFO</h1>
+        <h2 class="hc1">We Give You Complete<br>
+            Control Of Your Poultry<br>
+            Fields.</h2>
+            <h3 class="hc2">Lorem ipsum viverra feugiat. Pellen tesque <br>libero ut justo, ultrices in
+                ligula. <br>Semper at tempufddfel. Lorem ipsum dolor sit amet<br>
+                consectetur adipisicing elit. Non quae, fugiat.</h3>
+                
+                
+    </div>
+
+    <button class="btn" type="button" >
+        16+
+        <br>experence
+    </button>
+
+    <div class="product">
+        <div>
+            <h1>2500</h1>
+            <p class="p">products</p>
+        </div> 
+
+        <div>
+            <h1>1500</h1>
+            <p class="p">direct from factory</p>
+        </div>
+
+        <div>
+            <h1>1280</h1>
+            <p class="p">business success</p>
+        </div>
+
+        <div>
+            <h1>3020</h1>
+            <p class="p">happy clients</p>
+        </div>
+
+    </div>
+
+   <div class=" chair">
+    <img class="chair1" src="https://5.imimg.com/data5/NQ/NS/UE/SELLER-2094713/restaurant-designer-chair.jpg" alt=""/>
+    <img class="chair2" src="data:image/jpeg;base64,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" alt=""/>
+   </div>
+
+   <button class="rd1" input="text" type="button"> read more</button>
+   <button class="rd2" input="text" type="button"> read more</button>
+
+   <div  class="invention">
+    <p class="our">our invention</p>
+    <h1 class="in">OUR INVENTION IS<br> ALWAYS THE BEST</h1>
+   </div>
+
+   <button  class="bttn1" type="button">Read more</button>
+   <button class="bttn2" type="button">Read more</button>
+   <section>
+    <div>
+        <p class="te">OUR TEAM</p>
+        <h1 class="com"> Companies with whom we have tie up</h1>
+    </div>
+    <div class="ban">
+        <img src="images/about.tai-up/ashmela-logo.jpeg" alt=""/>
+        <img src="images/about.tai-up/img-4.jfif" alt=""/>
+        <img src="images/about.tai-up/img-5.webp" alt=""/>
+        <img src="images/about.tai-up/img-6.webp" alt=""/>
+        <img src="images/about.tai-up/img-8.jpg" alt=""/>
+        <img src="images/about.tai-up/img-9.jfif" alt=""/>
+        <img src="images/about.tai-up/img-11.jfif" alt=""/>
+        <img src="images/about.tai-up/logo -3.webp" alt=""/>
+        <img src="images/about.tai-up/img-4.jfif" alt=""/>
+        <img src="images/about.tai-up/lotus-image.webp" alt=""/>
+    </div>
+   </section>
+   <!-------footer- starts--here-->
+   <footer >
+    <div class="main">
+        <div class="infor">
+            <h1>INFORMATION</h1>
+           <ul class="ab">
+            <li>
+                <a href="">About us</a>
+            </li>
+            <li>
+                <a href="">COntact us</a>
+            </li>
+            <li>
+                <a href="">News</a>
+            </li>
+            <li>
+                <a href="">Store</a>
+            </li>
+           
+           </ul>
+        </div>
+        <div class="coll">
+            <h1>Collections</h1>
+            <ul class="ab">
+             <li>
+                 <a href="">Wooden chair</a>
+             </li>
+             <li>
+                 <a href="">Royal cloth chair</a>
+             </li>
+             <li>
+                 <a href="">Accent chair</a>
+             </li>
+             <li>
+                 <a href="">Bed</a>
+             </li>
+             <li>
+                <a href="">Hanging lamp</a>
+            </li>
+            
+            </ul>
+        </div>
+        <div class="myacc">
+            <h1>MYACCOUNTS</h1>
+            <ul class="ab">
+             <li>
+                 <a href="">My Accounts</a>
+             </li>
+             <li>
+                 <a href="">Wishlist</a>
+             </li>
+             <li>
+                 <a href="">Community </a>
+             </li>
+             <li>
+                 <a href="">Order History</a>
+             </li>
+             <li>
+                <a href="">My Card</a>
+            </li>
+            
+            </ul>
+        </div>
+        <div class="news">
+            <h1>NEWS LETTER</h1>
+            <ul class="ab">
+             <li>
+                 <a href="">Subscribe to get latest news,update and,
+                    information</a>
+             </li>
+             <li>
+                 <a href="">
+                     <button input="text" type="button"> subscribe</button>
+                    </a>
+             </li>
+             <li>
+                 <a href=""></a>
+             </li>
+             <li>
+                 <a href=""></a>
+             </li>
+            
+            </ul>
+        </div>
+    </div>
+    <!---sub--footer-->
+
+        <div class="icon">
+            <div class="font-icons" >
+            
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="copy"> 
+                <p>@copyright Designed and Developed by Reddy-king</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>+919959559088,+916301990787</p>
+            </div>
+        </div>
+       
+       
+
+    
+   </footer>
+
+
+</body>
+</html>
